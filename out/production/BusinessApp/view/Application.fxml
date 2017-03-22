@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acMain" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicationController">
+   <children>
+      <StackPane layoutY="-9.0" prefHeight="593.0" prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="acDashBord" style="-fx-border-style: solid; -fx-border-color: rgb(100,100,100); -fx-border-width: 0px 5px 0px 0px;">
+                     <children>
+                        <ScrollPane fx:id="leftSideBarScroolPan" prefHeight="678.0" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="781.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="btnHome" contentDisplay="TOP" layoutY="42.0" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="30.0" prefWidth="127.0" text="Home">
+                                       <graphic>
+                                          <ImageView fx:id="imgHomeBtn" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/home.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnStore" contentDisplay="TOP" layoutY="133.0" mnemonicParsing="false" onAction="#btnStockOnClick" prefHeight="30.0" prefWidth="127.0" text="Stock">
+                                       <graphic>
+                                          <ImageView fx:id="imgStoreBtn" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/stock.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnSell" contentDisplay="TOP" layoutY="225.0" mnemonicParsing="false" onAction="#btnSellOnClick" prefHeight="30.0" prefWidth="127.0" text="Sell">
+                                       <graphic>
+                                          <ImageView fx:id="imgSellBtn" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/sell2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnSettings" contentDisplay="TOP" layoutX="-1.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnSettingsOnClick" prefHeight="30.0" prefWidth="127.0" text="Settings">
+                                       <graphic>
+                                          <ImageView fx:id="imgSettingsBtn" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/settings.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnAbout" contentDisplay="TOP" layoutY="407.0" mnemonicParsing="false" onAction="#btnAboutOnClick" prefHeight="30.0" prefWidth="127.0" text="About">
+                                       <graphic>
+                                          <ImageView fx:id="imgAboutBtn" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/about.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnStatistics" contentDisplay="TOP" layoutY="314.0" mnemonicParsing="false" onAction="#btnStatisticsOnClick" prefHeight="30.0" prefWidth="127.0" text="Stastics">
+                                       <graphic>
+                                          <ImageView fx:id="imgStoreBtn1" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/Stat.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnRepair" contentDisplay="TOP" layoutX="2.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnRepairOnClick" prefHeight="30.0" prefWidth="122.0" text="Repair">
+                                       <graphic>
+                                          <ImageView fx:id="imgRepair" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/Repair.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnbackup" contentDisplay="TOP" layoutX="3.0" layoutY="697.0" mnemonicParsing="false" onAction="#btnbackupOnClick" prefHeight="30.0" prefWidth="122.0" text="Backup">
+                                       <graphic>
+                                          <ImageView fx:id="imgBackup" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/backup.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <BorderPane fx:id="appContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(40,46,52);;" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane fx:id="acHead" prefHeight="42.0" prefWidth="753.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane layoutX="14.0" layoutY="-15.0" prefHeight="60.0" prefWidth="751.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <AnchorPane prefHeight="48.0" prefWidth="160.0">
+                                             <children>
+                                                <AnchorPane prefHeight="20.0" prefWidth="120.0">
+                                                   <children>
+                                                      <Circle fx:id="imgUsrTop" fill="DODGERBLUE" layoutX="26.0" layoutY="24.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                      <Label fx:id="lblUsrName" layoutX="52.0" layoutY="17.0" text="Employee" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children></HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <ToggleButton fx:id="sideMenuToogleBtn" mnemonicParsing="false" onAction="#sideMenuToogleBtnOnCLick">
+                                             <graphic>
+                                                <ImageView fx:id="imgMenuBtn" fitHeight="52.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icon/menu.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </ToggleButton>
+                                          <Label fx:id="lblUserId" text="Label" textFill="#eeeded" visible="false" />
+                                          <Label prefHeight="28.0" prefWidth="200.0" text="হাজী ইলেক্ট্রনিক্স " textFill="#1eeb85">
+                                             <font>
+                                                <Font name="Arial" size="22.0" />
+                                             </font></Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane fx:id="acContent" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="532.0" prefWidth="639.0" StackPane.alignment="CENTER">
+                                 <effect>
+                                    <Blend />
+                                 </effect></AnchorPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainStyle.css" />
+   </stylesheets>
+</AnchorPane>

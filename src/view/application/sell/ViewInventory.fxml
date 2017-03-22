@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="1200.0" style="-fx-background-color: rgb(40,46,52);" stylesheets="/style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.sell.viewInventoryController">
+   <children>
+      <BorderPane layoutX="262.0" layoutY="138.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <center>
+            <HBox alignment="CENTER" prefHeight="700.0" prefWidth="1000.0">
+               <children>
+                  <AnchorPane prefHeight="568.0" prefWidth="1109.0">
+                     <children>
+                        <VBox prefHeight="568.0" prefWidth="784.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="91.0" prefWidth="475.0">
+                                 <children>
+                                    <GridPane hgap="5.0" prefHeight="46.0" prefWidth="475.0" vgap="5.0">
+                                       <children>
+                                          <TextField fx:id="search_item_code" alignment="CENTER" prefHeight="51.0" prefWidth="239.0" promptText="Item Code" GridPane.rowIndex="1" />
+                                          <TextField fx:id="search_category" alignment="CENTER" prefHeight="51.0" prefWidth="239.0" promptText="Category" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="search_brand" alignment="CENTER" prefHeight="51.0" prefWidth="239.0" promptText="Brand" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonOnClick" prefHeight="52.0" prefWidth="160.0" text="Search" textOverrun="CLIP" GridPane.columnIndex="1">
+                                             <graphic>
+                                                <ImageView fx:id="searchImage" fitHeight="38.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="239.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="236.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="236.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="503.0" prefWidth="475.0">
+                                 <children>
+                                    <TableView fx:id="inventoryTable" editable="true" prefHeight="563.0" prefWidth="734.0" style="-fx-background-color: rgb(33,50,60);">
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                       <columns>
+                                          <TableColumn fx:id="itemCode" editable="false" prefWidth="75.0" sortable="false" text="Item Code" />
+                                          <TableColumn fx:id="itemName" editable="false" prefWidth="75.0" text="Item Name" />
+                                          <TableColumn fx:id="quantity" editable="false" prefWidth="75.0" text="Quantity" />
+                                          <TableColumn fx:id="category" editable="false" prefWidth="75.0" text="Category" />
+                                          <TableColumn fx:id="brand" editable="false" prefWidth="75.0" text="Brand" />
+                                          <TableColumn fx:id="description" editable="false" prefWidth="75.0" text="Description" />
+                                          <TableColumn fx:id="price_4" editable="false" prefWidth="75.0" text="4 months cost" />
+                                          <TableColumn fx:id="price_10" editable="false" prefWidth="75.0" text="10 months Cost" />
+                                       </columns>
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="10.0" />
+                                       </VBox.margin>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+         <left>
+            <AnchorPane prefHeight="536.0" prefWidth="37.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="536.0" prefWidth="15.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="31.0" prefWidth="824.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="9.0" prefWidth="831.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

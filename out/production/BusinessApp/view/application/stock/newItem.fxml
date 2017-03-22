@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="871.0" style="-fx-background-color: rgb(40,46,52);" stylesheets="/style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.stock.newItemController">
+   <children>
+      <BorderPane layoutX="262.0" layoutY="138.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <center>
+            <HBox alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="608.0" prefWidth="386.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="567.0" prefWidth="563.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="114.0" prefWidth="390.0" />
+                              <AnchorPane prefHeight="505.0" prefWidth="402.0">
+                                 <children>
+                                    <GridPane hgap="5.0" prefHeight="458.0" prefWidth="386.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Item Code">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField fx:id="itemCode" alignment="CENTER" prefHeight="40.0" prefWidth="179.0" GridPane.columnIndex="1" />
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Item Name" GridPane.rowIndex="1">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Category" GridPane.rowIndex="2">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Brand" GridPane.rowIndex="3">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Description" GridPane.rowIndex="4">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Buy Cost" GridPane.rowIndex="5">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField fx:id="itemName" alignment="CENTER" prefHeight="51.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="Description" alignment="CENTER" prefHeight="51.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField fx:id="BuyCost" alignment="CENTER" prefHeight="51.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="4 months Price" GridPane.rowIndex="6">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="10 months Price" GridPane.rowIndex="7">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="198.0" text="Quantity" GridPane.rowIndex="8">
+                                             <padding>
+                                                <Insets right="25.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField fx:id="price4months" alignment="CENTER" prefHeight="45.0" prefWidth="232.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField fx:id="price10months" alignment="CENTER" prefHeight="45.0" prefWidth="232.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <TextField fx:id="Quantity" alignment="CENTER" prefHeight="45.0" prefWidth="232.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <Button fx:id="categoryButton" mnemonicParsing="false" onAction="#categoryButtonOnClick" prefHeight="50.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <graphic>
+                                                <ImageView fx:id="categoryImage" fitHeight="35.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="BrandButton" mnemonicParsing="false" onAction="#BrandButtonOnClick" prefHeight="50.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <graphic>
+                                                <ImageView fx:id="brandImage" fitHeight="35.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <ComboBox fx:id="category" prefHeight="63.0" prefWidth="173.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <ComboBox fx:id="brand" prefHeight="63.0" prefWidth="173.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="135.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="176.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="91.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="126.0" prefWidth="386.0">
+                                 <children>
+                                    <Button fx:id="cancelButton" layoutX="70.0" layoutY="44.0" mnemonicParsing="false" onAction="#cancelButtonOnClick" prefHeight="90.0" prefWidth="160.0">
+                                       <graphic>
+                                          <ImageView fx:id="cancelImage" fitHeight="77.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="submitButton" layoutX="239.0" layoutY="44.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="90.0" prefWidth="165.0">
+                                       <graphic>
+                                          <ImageView fx:id="submitImage" fitHeight="76.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <AnchorPane prefHeight="41.0" prefWidth="822.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Enter New Product Details" />
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="567.0" prefWidth="208.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="567.0" prefWidth="186.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="31.0" prefWidth="824.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

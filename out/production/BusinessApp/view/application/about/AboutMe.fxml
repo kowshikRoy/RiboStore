@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: rgb(40,46,52);;" stylesheets="/style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.application.about.AboutMeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="553.0" prefWidth="471.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="517.0" prefWidth="735.0" spacing="20.0">
+                           <children>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="425.0">
+                                 <children>
+                                    <Label layoutX="93.0" layoutY="202.0" prefHeight="35.0" prefWidth="297.0" text="Repon Kumar Roy">
+                                       <font>
+                                          <Font name="System Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="58.0" layoutY="237.0" text="Bangladesh University of Engineering &amp; Technology">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="124.0" layoutY="259.0" text="Department: CSE, Batch:12" />
+                                    <Label layoutX="124.0" layoutY="284.0" text="M@il me :" />
+                                    <Hyperlink layoutX="190.0" layoutY="280.0" text="repon.roy@hotmail.com" />
+                                    <ImageView fx:id="reponImg" fitHeight="162.0" fitWidth="153.0" layoutX="136.0" layoutY="23.0" pickOnBounds="true" smooth="false" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="551.0" prefWidth="445.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="517.0" prefWidth="735.0">
+                           <children>
+                              <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="425.0">
+                                 <children>
+                                    <Label layoutX="93.0" layoutY="202.0" prefHeight="35.0" prefWidth="297.0" text="Nafi Us-Sabbir">
+                                       <font>
+                                          <Font name="System Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="58.0" layoutY="237.0" text="Bangladesh University of Engineering &amp; Technology">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="124.0" layoutY="259.0" text="Department: CSE, Batch:12" />
+                                    <Label layoutX="124.0" layoutY="284.0" text="M@il me :" />
+                                    <Hyperlink layoutX="190.0" layoutY="280.0" text="nafi.sabith.1993@gmail.com" />
+                                    <ImageView fx:id="nafiImg" fitHeight="162.0" fitWidth="153.0" layoutX="131.0" layoutY="28.0" pickOnBounds="true" smooth="false" />
+                                 </children>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="336.0" layoutY="59.0" prefHeight="94.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="336.0" layoutY="59.0" prefHeight="35.0" prefWidth="197.0" text="Developed By" textFill="#46e353">
+                           <font>
+                              <Font name="Consolas" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

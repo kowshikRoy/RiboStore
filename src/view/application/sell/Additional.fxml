@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: rgb(40,46,52);;" stylesheets="/style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.sell.AdditionalController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="506.0" prefWidth="940.0" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="467.0" prefWidth="471.0">
+                     <children>
+                        <GridPane prefHeight="276.0" prefWidth="483.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="173.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="169.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="incomeText" prefHeight="48.0" prefWidth="212.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" prefHeight="71.0" prefWidth="212.0" text="Income" GridPane.columnIndex="1" />
+                              <ComboBox fx:id="incomeCombo" prefHeight="38.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="incomeDoneButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#incomeDoneButtonOnClick" prefHeight="88.0" prefWidth="187.0" text="Done" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.rowSpan="2">
+                                 <graphic>
+                                    <ImageView fx:id="incomingImage" fitHeight="65.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="incomingPlusButton" mnemonicParsing="false" onAction="#incomingPlusButtonOnClick" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fx:id="incomingPlus" fitHeight="41.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="467.0" prefWidth="471.0">
+                     <children>
+                        <GridPane prefHeight="276.0" prefWidth="483.0">
+                           <children>
+                              <TextField fx:id="outgoingText" prefHeight="48.0" prefWidth="212.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" prefHeight="71.0" prefWidth="212.0" text=" Outgoings" GridPane.columnIndex="1" />
+                              <ComboBox fx:id="outgoingCombo" prefHeight="38.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="outgoingDoneButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#outgoingDoneButtonOnClick" prefHeight="41.0" prefWidth="187.0" text="Done" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.rowSpan="2">
+                                 <graphic>
+                                    <ImageView fx:id="outgoingImage" fitHeight="65.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <ImageView fitHeight="41.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button fx:id="outgoingButton" mnemonicParsing="false" onAction="#outgoingButtonOnClick" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fx:id="outgoingPlus" fitHeight="41.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="173.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="169.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="336.0" layoutY="59.0" prefHeight="94.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="mainButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#mainButtonOnClick" prefHeight="60.0" prefWidth="138.0" text="Main DashBoard">
+                           <graphic>
+                              <ImageView fx:id="mainImage" fitHeight="81.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

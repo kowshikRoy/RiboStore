@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="871.0" style="-fx-background-color: rgb(40,46,52);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.sell.MainSellController">
+   <children>
+      <BorderPane layoutX="262.0" layoutY="138.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox>
+                     <children>
+                        <AnchorPane prefHeight="507.0" prefWidth="856.0" BorderPane.alignment="CENTER">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <HBox layoutX="128.0" layoutY="63.0" prefHeight="414.0" prefWidth="592.0">
+                                 <children>
+                                    <GridPane hgap="20.0" prefHeight="396.0" prefWidth="585.0" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button fx:id="newBillingButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#newBillingButtonOnClick" prefHeight="193.0" prefWidth="192.0" text="New Billing">
+                                             <graphic>
+                                                <ImageView fx:id="newBillingmage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="newTransactionButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#newTransactionButtonOnClick" prefHeight="193.0" prefWidth="192.0" text="New Transaction" GridPane.columnIndex="1">
+                                             <graphic>
+                                                <ImageView fx:id="newTransactionImage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="AddtionalIncomeButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#AddtionalIncomeButtonOnClick" prefHeight="193.0" prefWidth="192.0" text="Additional" GridPane.rowIndex="1">
+                                             <graphic>
+                                                <ImageView fx:id="incomeImage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="AdditionalCostButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#AdditionalCostButtonOnClick" prefHeight="193.0" prefWidth="192.0" text="Show Log" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <graphic>
+                                                <ImageView fx:id="costImage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="showListButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#showListButton" prefHeight="193.0" prefWidth="192.0" text="Show List" GridPane.columnIndex="2">
+                                             <graphic>
+                                                <ImageView fx:id="showListImage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="viewInventoryButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#viewInventoryButtonOnClick" prefHeight="193.0" prefWidth="192.0" text="View Inventory" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <graphic>
+                                                <ImageView fx:id="viewImage" fitHeight="145.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="26.0" prefWidth="832.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="831.0" BorderPane.alignment="CENTER" />
+         </top>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

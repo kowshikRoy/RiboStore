@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acMain" onKeyPressed="#acMain" onMouseMoved="#acMainOnMouseMove" prefHeight="593.0" prefWidth="767.0" stylesheets="@../style/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicationController">
+   <children>
+      <Label fx:id="label1" layoutX="201.0" layoutY="150.0" prefHeight="17.0" prefWidth="257.0" text="Label" />
+      <Label fx:id="label2" layoutX="201.0" layoutY="179.0" prefHeight="17.0" prefWidth="257.0" text="Label" />
+      <Label fx:id="label3" layoutX="201.0" layoutY="214.0" prefHeight="17.0" prefWidth="257.0" text="Label" />
+      <Label fx:id="label4" layoutX="201.0" layoutY="253.0" prefHeight="17.0" prefWidth="257.0" text="Label" />
+   </children>
+</AnchorPane>

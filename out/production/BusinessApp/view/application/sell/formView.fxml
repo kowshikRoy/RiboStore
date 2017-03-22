@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: rgb(40,46,52);" stylesheets="/style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.sell.FormViewController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="109.0" prefWidth="863.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="8.0" layoutY="83.0" prefHeight="137.0" prefWidth="859.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="doneButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleDoneButton" prefHeight="39.0" prefWidth="132.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="doneImage" fitHeight="57.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="editButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="39.0" prefWidth="132.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="editButtonImage" fitHeight="60.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="375.0" prefWidth="873.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane alignment="CENTER" hgap="20.0" layoutX="7.0" layoutY="-2.0" prefHeight="262.0" prefWidth="854.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane hgap="5.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="১ম জমা " />
+                              <DatePicker fx:id="dpc1" editable="false" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc1" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <DatePicker fx:id="dpr1" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr1" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="২য় জমা" />
+                              <DatePicker fx:id="dpc2" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc2" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <DatePicker fx:id="dpr2" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr2" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৩য় জমা " />
+                              <DatePicker fx:id="dpc3" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc3" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <DatePicker fx:id="dpr3" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr3" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="4">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৪র্থ জমা " />
+                              <DatePicker fx:id="dpc4" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc4" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <DatePicker fx:id="dpr4" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr4" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="5">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৫ম জমা " />
+                              <DatePicker fx:id="dpc5" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc5" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <children>
+                              <DatePicker fx:id="dpr6" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr6" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="6">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৬ তম" />
+                              <DatePicker fx:id="dpc6" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc6" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="8">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৮ম জমা " />
+                              <DatePicker fx:id="dpc8" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc8" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="7">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৭ম জমা " />
+                              <DatePicker fx:id="dpc7" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc7" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="9">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="৯ম জমা " />
+                              <DatePicker fx:id="dpc9" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc9" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.rowIndex="10">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="80.0" text="১০ম জমা " />
+                              <DatePicker fx:id="dpc10" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfc10" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <children>
+                              <DatePicker fx:id="dpr5" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr5" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="314.0" text="কিস্তি পরিশোধের নিয়ম " />
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="348.0" text="কিস্তি জমা হিসাব " GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="72.0" prefWidth="138.0" text="মন্তব্য " GridPane.columnIndex="2" />
+                        <TextField fx:id="comment1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="comment2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="comment3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="comment4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="comment5" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="comment6" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="comment7" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <TextField fx:id="comment8" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <TextField fx:id="comment9" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="comment10" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <children>
+                              <DatePicker fx:id="dpr7" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr7" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <children>
+                              <DatePicker fx:id="dpr8" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr8" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <children>
+                              <DatePicker fx:id="dpr9" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr9" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane hgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <children>
+                              <DatePicker fx:id="dpr10" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfr10" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="155.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane alignment="CENTER" hgap="5.0" prefHeight="30.0" prefWidth="236.0" GridPane.rowIndex="11">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="199.0" text="মোট  " GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalCustomer" prefHeight="42.0" prefWidth="129.0" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="79.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="195.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="96.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane alignment="CENTER" hgap="5.0" prefHeight="34.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="219.0" text="মোট  " GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalRecieve" prefHeight="42.0" prefWidth="129.0" GridPane.columnIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="92.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="206.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="96.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.0" minWidth="10.0" prefWidth="292.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.0" minWidth="10.0" prefWidth="327.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="126.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="3.0" top="3.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER" layoutX="50.0" prefHeight="305.0" prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="240.0" prefWidth="1200.0">
+                     <children>
+                        <GridPane prefHeight="240.0" prefWidth="859.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="অবস্থা " GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="বিক্রয় কার্ড নং">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" opacity="0.0" prefHeight="35.0" prefWidth="250.0" text="বকেয়ার পরিমাণ " GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পরবর্তী জমা" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="গ্রুপ " GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="১০ কিস্তির মূল্য " GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পণ্যের নাম" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="৪ কিস্তির মূল্য " GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="বার " GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="মোবাইল নং" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="ঠিকানা" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="মোবাইল নং " GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="ঠিকানা" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পণ্যের ক্রয় মূল্য " GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পিতার নাম " GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পিতার নাম" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="ক্রেতার নাম " GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="পণ্য নং " GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="সনাক্তকারীর নাম " GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="তারিখ " GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="labelCard" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" />
+                              <DatePicker fx:id="labelDate" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" />
+                              <TextField fx:id="labelRefName" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <TextField fx:id="labelProductId" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" />
+                              <TextField fx:id="labelCustomerName" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="labelRefFather" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <TextField fx:id="labelCustomerFather" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="labelProductCost" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <TextField fx:id="labelCustomerAddress" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="labelCustomerMobile" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="labelRefAddress" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <TextField fx:id="labelRefMobile" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="comboDay" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <TextField fx:id="Cost4month" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <TextField fx:id="labelProductName" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <DatePicker fx:id="labelNextDate" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <TextField fx:id="Cost10Months" editable="false" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                              <ComboBox fx:id="comboGroup" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <ComboBox fx:id="comboStatus" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <Label fx:id="Due" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="250.0" text="স্কিম " GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox fx:id="skim" prefHeight="35.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

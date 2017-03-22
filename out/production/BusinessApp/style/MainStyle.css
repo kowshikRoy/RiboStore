@@ -1,0 +1,379 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+/*******************************************************************************
+ *                                                                             *
+ * TextView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+.label{
+    -fx-text-fill: white;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.text-field{
+
+
+    -fx-border-color: #D7D7D7;
+    -fx-border-radius:5px;
+    -fx-background-color: rgba(33,50,60);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-padding: 5px 5px 5px 5px;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    /*-fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
+
+}
+.text-field:focused{
+    -fx-border-color: rgb(0,166,136);
+
+}
+.text-field:hover{
+
+}
+.text-area{
+    -fx-border-width: 0.7px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #D7D7D7;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-background-color: white;
+}
+.text-area:focused{
+    -fx-border-color: #EA5444;
+   }
+.text-area *.content{
+    -fx-background-color: none;
+    -fx-padding:5;
+}
+/*******************************************************************************
+ *                                                                             *
+ * ButtonView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.button{
+    -fx-background-radius: 2px;
+    -fx-backgorund-style:solid;
+    -fx-font-size: 13px;
+    -fx-font-weight:700;
+    -fx-text-fill: rgb(30,220,30);
+    -fx-border-width:10px;
+
+    -fx-cursor:hand;
+    -fx-background-color: rgb(40,46,52);
+    -fx-font-family: "consolas";
+}
+.button:hover{
+     -fx-background-color: rgb(40,46,52);
+    -fx-text-fill: white;
+
+}
+.button:focused{
+   -fx-border-width: 0.5px;
+   -fx-background-color: #EA5444;
+    -fx-border-color: #ACACAC;
+   -fx-border-radius: 5px;
+/*    -fx-background-radius: 50px;
+    -fx-background-color: white;
+    -fx-font-size: 12px;
+    -fx-padding: 8px 25px;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
+}
+.button:pressed{
+    -fx-background-color: #EA5444;
+    -fx-text-fill: white;
+}
+
+.hyperlink{
+    -fx-text-fill: white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ComboBoxView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+#apDesignPane{
+    -fx-background-color: rgba(8, 0, 0, .1);
+    -fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0);
+}
+#apMother{
+    -fx-background-image: url("../image/background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+.scroll-pane{
+    -fx-padding: 0;
+    -fx-background:none;
+}
+AnchorPane{
+
+}
+#attachImage, #btnAttechLogo, #btnAttachImage{
+    -fx-padding: 0px;
+    -fx-background-color: none;
+    -fx-border-color: none;
+    -fx-cursor: hand;
+    -fx-text-fill: blue;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CheckBoxView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+
+#tfSearch{
+   /* -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-padding: 5;
+    -fx-font-size: 15px;
+    -fx-min-hight: 20px;
+    -fx-max-hight: 20px;
+
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ListView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+.list-view{
+    -fx-background-color: none;
+}
+.list-view .list-cell:filled{
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-weight:700;
+}
+.list-cell:empty {
+    -fx-background-color: -fx-control-inner-background;
+}
+.list-view .list-cell {
+    -fx-padding: 0.8em 0em 0.8em 0.3em;
+    -fx-text-fill: #212121;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+}
+
+.list-cell:odd{
+    -fx-background-color: white;
+}
+
+.list-view:focused{
+    /*-fx-background-color: -fx-box-border,-fx-box-border,white;*/
+}
+.list-view:focused .list-cell:filled:selected,
+.list-view:focused .list-cell:filled:selected:hover,
+.list-view:focused .list-cell:filled:focused:selected,
+.list-view:focused .list-cell:odd:filled:selected:focused:hover{
+    /*-fx-background-color: -fx-box-border, rgba(205,205,205,1);*/
+    -fx-background-color:#EA5444;
+}
+.list-view:focused .list-cell:focused {
+    -fx-background-color: -fx-box-border, white;
+}
+.list-view .list-cell:hover:empty,
+.list-view .list-cell:odd:hover:empty {
+    -fx-background-color: white;
+}
+.list-view .list-cell:hover,
+.list-view .list-cell:odd:hover,
+.list-view:focused .list-cell:odd:focused:hover,
+.list-view:focused .list-cell:focused:hover{
+    -fx-background-color: -fx-box-border,rgba(231,231,231,1);
+}
+.list-view .list-cell:odd:focused:hover{
+    -fx-background-color: -fx-box-border,rgba(205,205,205,1);
+}
+.list-view .list-cell:selected{
+    -fx-background-color: #EA5444;
+    -fx-text-fill:white;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TableView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+
+.text-field:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+.text:focused:hover{
+     -fx-fill: white;
+}
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.333333em 0em 0.333333em 0em; /* 4 1 4 1 */
+}
+
+.context-menu .separator .line{
+    -fx-padding: 0.0em 0.333333em 0.0em 0.333333em;
+    -fx-border-style: solid;
+    -fx-background-color: #c2c2c2;
+    -fx-border-width: 0.5px;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 0.666666em 0.999999em 0.4999995em 0.999999em;   /*6 12 6 12 */
+}
+
+.menu-item .label {
+    -fx-padding: 0em 0.5em 0em 0em;
+    -fx-text-fill: #212121;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+}
+
+
+.menu-item:focused {
+     -fx-background: -fx-accent;
+     -fx-background-color: #dedede;
+}
+
+.menu-item:pressed
+{
+    -fx-background-color: #EA5444;
+    -fx-text-fill: white;
+}
+
+.menu-item:pressed .label
+{
+    -fx-text-fill: white;
+}
+StoreComboBox{
+    -fx-border-width: 0.0px;
+    -fx-border-color: none;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+#btnRefresh{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-background-image: url("../icon/refreshOne32.png");
+/*    -fx-background-size: cover;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;*/
+}
+#btnRefresh:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-background-image: url("../icon/refreshTwo32.png");
+    -fx-cursor: hand;
+}
+#btnRefresh:pressed{
+    -fx-rotate: 100;
+}
+.toggle-button{
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #EA5444;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: none;
+    -fx-font-size: 12px;
+    -fx-padding: 34px 15px 10px 15px;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    -fx-cursor:hand;
+}
+.toggle-button:hover{
+    -fx-background-color: #EA5444;
+    -fx-border-color: #212121;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-text-fill: white;
+}
+.toggle-button:selected{
+    -fx-background-color: #959595;
+    -fx-border-color: #D7D7D7;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-text-fill: white;
+}
+#btnClearSelected{
+    -fx-font-size: 10px;
+    -fx-font-weight:100;
+    -fx-border-color: none;
+    -fx-border-radius: 0px;
+    -fx-padding: 0px 0px 0px 20px;
+    -fx-background-radius: 0px;
+    -fx-cursor:hand;
+    -fx-background-image: url("../image/close_red.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: left center;
+}
+#btnClearSelected:hover{
+    -fx-font-size: 10px;
+    -fx-font-weight:100;
+    -fx-border-color: none;
+    -fx-border-radius: 0px;
+    -fx-padding: 0px 0px 0px 20px;
+    -fx-background-radius: 0px;
+    -fx-cursor:hand;
+    -fx-background-image: url("../image/close.png");
+    -fx-backgorund-color:none;
+    -fx-background-repeat: stretch;
+    -fx-background-position: left center;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-padding: 0.588883em 0.5em 0.666667em 0.5em; /* 7 6 8 6 */
+
+    -fx-background-color: derive(-fx-box-border,30%),
+        linear-gradient(to bottom, derive(-fx-base,-3%),
+                                   derive(-fx-base,5%) 50%,
+                                   derive(-fx-base,-3%));
+    -fx-background-insets: 0 0 0 0, 0 0 1 0;
+    -fx-background-color:green;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: yellow ;
+    -fx-alignment:center;
+}
+.table-view .column-header .label{
+    -fx-text-fill: black;
+
+}
+.table-view .table-row-cell .table-cell{
+    -fx-alignment:center;
+    -fx-font-family:"consolas";
+}
+.combo-box{
+    -fx-font-family:"consolas";
+}
+
+
+.combo-box .list-view{
+    -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+    -fx-background-color: white;
+    -fx-padding: 0px;
+    -fx-font-weight:700;
+    -fx-border-radius: 10px 10px 0px 0px;
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+.combo-box .list-view .list-cell:filled {
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-weight:700;
+  }
